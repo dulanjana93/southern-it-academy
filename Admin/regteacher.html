@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Register Teacher</title>
+      <style>
+         /* Center align all elements */
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+         }
+         /* Style for labels */
+         label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+         }
+         /* Style for textboxes */
+         input[type="text"], input[type="password"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            width: 100%;
+         }
+         /* Style for gender checkbox */
+         .checkbox {
+            display: inline-block;
+            width: 50px;
+            text-align: left;
+         }
+         /* Style for buttons */
+         .button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+         }
+         .button:hover {
+            background-color: #006080;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Register Teacher</h1>
+      <form method="post" action="regteacher.php">
+         <label for="id">tID:</label>
+         <input type="text" id="id" name="tid" required><br>
+
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required><br>
+
+         <label for="phone">Telephone Number:</label>
+         <input type="text" id="phone" name="telephone" required><br>
+
+         <label for="address">Address:</label>
+         <input type="text" id="address" name="address" required><br>
+
+         <label for="gender">Gender:</label>
+         <div class="checkbox">
+            <input type="checkbox" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+         </div>
+         <div class="checkbox">
+            <input type="checkbox" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+         </div><br>
+
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required><br>
+
+         <button class="button" type="submit" name="register">Register</button>
+      </form>
+   </body>
+</html>

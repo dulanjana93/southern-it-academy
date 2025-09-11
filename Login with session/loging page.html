@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		button[type="submit"],
+		button[type="reset"]
+		 {
+			background-color: #68eb68;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-right: 10px;
+		}
+		button[type="reset"] {
+			background-color: #68eb68;
+		}
+
+		
+	</style>
+</head>
+<body style="background-color:rgba(182, 176, 235, 0.616);">
+	<div class="container">
+        
+            <h1 style="text-align: center">Loging Page</h1>
+		<form  action="loging page.php" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="account-type">Account Type:</label>
+			<select id="account-type" name="account-type">
+				<option value="student">Student</option>
+				<option value="teacher">Teacher</option>
+				<option value="admin">Admin</option>
+
+			</select>
+
+			<button type="submit" name="logbtn" >Loging</button> 
+			<button type="reset">Reset</button>
+		</form>
+	</div>
+</body>
+</html>
